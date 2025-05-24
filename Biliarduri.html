@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classic Pool Game</title>
+    <link rel="stylesheet" type="text/css" href="layout.css"/>
+    <script src="LAB.min.js"></script>
+    <script>
+        $LAB
+                .script('system/Controale.js').wait()
+                .script('system/Color.js').wait()
+                .script('geom/Vector2.js').wait()
+                .script('input/ButtonState.js').wait()
+                .script('input/Tastatura.js').wait()
+                .script('input/Mouse.js').wait()
+                .script('Canvas2D.js').wait()
+                .script('Scor.js').wait()
+                .script('Ball.js').wait()
+                .script('Bat.js').wait()
+                .script('Jucator.js').wait()
+                .script('Politica.js').wait()
+                .script('BiliarduriGameWorld.js').wait()
+                .script('Game.js')
+                .script('Biliarduri.js').wait(function () {
+                    Game.start('gameArea','screen', 1500, 825);
+                });
+
+    </script>
+</head>
+
+<body style = "background-color:rgb(26, 35, 126)">
+<div id="gameArea">
+    <canvas id="screen" width="2000" height="1000"></canvas>
+</div>
+</body>
+</html>
